@@ -27,14 +27,14 @@ public class Estudante {
      * No entanto, observe que o construtor não é público (é package),
      * não podendo ser usado fora do pacote.
      *
-     * @param id           matrícula do estudante
-     * @param nome         nome do estudante
-     * @param sexo         sexo do estudante
-     * @param nota         nota do estudante
+     * @param id matrícula do estudante
+     * @param nome nome do estudante
+     * @param sexo sexo do estudante
+     * @param nota nota do estudante
      * @param anoGraduacao ano de graduação
-     * @param curso        curso matriculado
+     * @param curso curso matriculado
      */
-    Estudante(int id, String nome, char sexo, double nota, int anoGraduacao, Curso curso, Cidade cidade) {
+    Estudante(int id, String nome, char sexo, double nota, int anoGraduacao, Curso curso, Cidade cidade){
         setId(id);
         setNome(nome);
         setSexo(sexo);
@@ -123,7 +123,7 @@ public class Estudante {
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         final String cursos = String.format("%-35s", curso == null ? "" : "Curso: " + curso.getNome());
         return String.format(
                 "Id: %6d Nome: %-30s Sexo: %c Nota: %5.2f Ano Grad: %4d %s",

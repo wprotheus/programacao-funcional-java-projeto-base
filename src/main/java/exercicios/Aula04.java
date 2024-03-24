@@ -7,10 +7,12 @@ import java.util.stream.Stream;
 
 /**
  * Esta é uma classe para você poder implementar as atividades propostas no README.
- * Você NÃO deve alterar a estrutura deste arquivo,
- * não pode alterar o nome da classe, dos métodos ou dos atributos,
- * não pode alterar valores dos atributos existentes,
- * nem pode alterar parâmetros e tipo de retorno dos métodos.
+ * Você <b>NÃO</b> deve alterar:
+ * <ul>
+ *     <li>a estrutura deste arquivo;</li>
+ *     <li>o nome da classe, dos métodos ou dos atributos;</li>
+ *     <li>parâmetros e tipo de retorno dos métodos.</li>
+ * </ul>
  *
  * <p>Você pode alterar o código interno dos métodos, criar métodos auxiliares que podem ser chamados
  * pelos existentes, mas não deve alterar a estrutura dos métodos disponíveis.</p>
@@ -21,9 +23,9 @@ public class Aula04 extends Aula {
 
     /**
      * Você pode chamar os métodos existentes e outros que você criar aqui,
-     * incluir prints e fazer o que desejar neste método para verificar os valores retornados pelo seu método.
+     * incluir prints e fazer o que desejar neste método para conferir os valores retornados pelo seu método.
      * Para verificar se sua implementação está correta, clique com o botão direito no nome do projeto na aba esquerda
-     * do IntelliJ e selecione a opção "Run 'All Tests'".
+     * do IntelliJ e selecione a opção "Run All Tests".
      */
     public Aula04() {
         final var curso = generator.COURSES[3];
