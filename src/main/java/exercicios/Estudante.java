@@ -1,5 +1,7 @@
 package exercicios;
 
+import lombok.Setter;
+
 /**
  * Representa um aluno em uma instituição de ensino.
  * Classe baseada no exemplo do <a href="https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143">exercicios.Curso JDK 8 MOOC: Lambdas and Streams Introduction</a>.
@@ -17,6 +19,7 @@ public class Estudante {
     /**
      * Cidade onde o estudante mora.
      */
+    @Setter
     private Cidade cidade;
 
     /**
@@ -96,19 +99,12 @@ public class Estudante {
         return cidade;
     }
 
-    public void setCidade(Cidade cidade) {
-        this.cidade = cidade;
-    }
-
     public boolean hasCurso()
     {
         return curso != null;
     }
 
-    public boolean isAprovado()
-    {
-        return nota >= 6;
-    }
+    public boolean isAprovado() { return nota >= 6; }
 
     public boolean isHomem() {
         return sexo == 'M';
@@ -128,21 +124,5 @@ public class Estudante {
         return String.format(
                 "Id: %6d Nome: %-30s Sexo: %c Nota: %5.2f Ano Grad: %4d %s",
                 id, nome, sexo, nota, anoGraduacao, cursos);
-    }
-
-    public boolean isMulher(){
-        return sexo == 'F';
-    }
-
-    public boolean isHomem(){
-        return sexo == 'M';
-    }
-
-    public boolean hasCurso(){
-        return curso != null;
-    }
-
-    public boolean isAprovado(){
-        return nota >= 6;
     }
 }
